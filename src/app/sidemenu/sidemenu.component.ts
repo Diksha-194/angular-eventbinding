@@ -14,7 +14,4 @@ title : String;
 
   ngOnInit() {
   }
-getName(event){
-  this.title = event;
-}
 }

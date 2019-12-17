@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./description.component.css']
 })
 export class DescriptionComponent implements OnInit {
-  
+  title : string;
 
   constructor() { }
 
   ngOnInit() {
   }
-  
+  getName(event){
+    this.title=event;
+  }
 }
