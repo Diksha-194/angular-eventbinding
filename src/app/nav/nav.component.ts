@@ -6,7 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
- name : String = 'Child Component';
+ name : String = 'From Nav Component';
 
  @Output() sendName = new EventEmitter<String>();
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-sidemenu',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidemenu.component.css']
 })
 export class SidemenuComponent implements OnInit {
+title : String;
+
+@Output() sendName = new EventEmitter<String>();
 
   constructor() { }
 
   ngOnInit() {
   }
-
+getName(event){
+  this.title = event;
+}
 }
