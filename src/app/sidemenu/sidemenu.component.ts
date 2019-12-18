@@ -8,10 +8,14 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class SidemenuComponent implements OnInit {
 title : String;
 
-@Output() sendName = new EventEmitter<String>();
+@Output() sendNameFromSideMenu = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  sendName(event: string) {
+    this.sendNameFromSideMenu.emit(event);
   }
 }
